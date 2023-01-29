@@ -1,0 +1,331 @@
+/* =========================== FIXED VALUE =========================== */
+:root{
+    --red: #FF0000;
+    --maroon: #630000;
+    --white: #FFF;
+    --black: #000;
+    --red-box: #EC1C24;
+    --grey: #4E4E4E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+.app{
+    background-color: #FAFAFA;
+}
+
+a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.MuiTypography-root, .ant-typography{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.action-button{
+    padding: 8px 24px;
+    border: 3px solid var(--red);
+}
+
+.action-button p{
+    font-size: 16px;
+}
+
+.button, .ant-btn{
+    width: 150px;
+    display: block;
+    padding: 8px 24px;
+    margin-top: 50px;
+    text-align: center;
+    border: 3px solid var(--red);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ant-btn span{
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    font-size: 16px;
+}
+
+.ant-btn:hover{
+    color: var(--black) !important;
+    border: 3px solid var(--red) !important;
+}
+
+.button .ant-typography{
+    font-size: 16px;
+}
+
+.submit-button{
+    width: 120px;
+    display: block;
+    padding: 6px 12px;
+    text-align: center;
+    border: 3px solid var(--red);
+    background-color: #FAFAFA;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.page-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 8px;
+    border-left: 5px solid var(--red-box);
+    line-height: 36px;
+}
+
+.sub-title{
+    max-width: 360px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* =========================== NEXT VERSION =========================== */
+.navbar-comingsoon{
+    display: inline-block;
+    pointer-events: none;
+}
+
+.navbar-comingsoon-mark{
+    width: 90px;
+    margin: 10px 0 0 -15px;
+    position: absolute;
+}
+
+.comingsoon-mark{
+    width: 160px;
+    margin: -60px 0 0 -30px;
+    position: absolute;
+}
+
+/* =========================== HEADER =========================== */
+.appbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0 24px 0;
+    background-color: #FAFAFA;
+    transition: padding 0.5s, box-shadow 0.5s linear;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAFAFAE7;
+    padding: 6px 0 6px 0;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+    transition: padding 0.5s, box-shadow 0.5s linear;
+}
+
+.logo{
+    width: 100px;
+}
+
+.ant-menu{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ul.ant-menu li{
+    font-size: 16px;
+}
+
+ul.ant-menu li span{
+    padding: 0 15px;
+}
+
+.ant-menu-item::after{
+    border-bottom: none !important;
+}
+
+.ant-menu-item-selected{
+    color: var(--maroon) !important;
+}
+
+/* =========================== FOOTER =========================== */
+.footer{
+    background-color: var(--maroon);
+    text-align: center;
+}
+
+.copyright{
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+
+
+/* =========================== COMPONENTS =========================== */
+/* =========================== HOME =========================== */
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 200px 180px 200px;
+}
+
+.hero-title {
+    width: 400px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-description{
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+.hero-image{
+    width: 350px;
+    height: 260px;
+}
+
+.home-description{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.home-description div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-image{
+    width: 200px;
+}
+
+.work-desc{
+    max-width: 200px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.border{
+    height: 200px;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.happening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 140px 0 120px 0;
+}
+
+.happening-fix{
+    max-width: 300px;
+    position: absolute;
+    text-align: center;
+    margin: 60px 0 0 60px;
+}
+
+.happening-fix .button{
+    width: 160px;
+    background-color: var(--white);
+    margin-left: 160px;
+}
+
+.happening-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.happening-desc{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 32px;
+}
+
+/* =========================== CONTACTUS =========================== */
+.contactus-layout{
+    display: flex;
+    justify-content: center;
+    column-count: 2;
+    column-gap: 240px;
+    padding: 40px 0px;
+    margin-right: 40px;
+}
+
+.contactus-form{
+    width: 480px;
+    min-width: 360px;
+    column-span: 2;
+}
+
+.form{
+    margin: 32px 0;
+    font-weight: bold;
+}
+
+/* .ant-form-item-required{
+    color: var(--grey) !important;
+} */
+
+/* .ant-form-item-label{
+    margin-top: 8px !important;
+} */
+
+.ant-input{
+    font-size: 16px;
+    padding: 12px;
+}
+
+.contactus-info{
+    column-span: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 240px 0;
+    font-weight: bold;
+}
+
+.info span, .socmed span{
+    display: flex;
+    margin-top: 16px;
+}
+
+.contactus-info span .ant-typography{
+    margin-left: 8px;
+}
+
+/* =========================== PAGENOTFOUND =========================== */
+.error-404{
+    cursor: url('/src/assets/images/lock-cursor.png'), auto;
+}
